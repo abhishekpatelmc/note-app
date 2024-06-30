@@ -5,13 +5,13 @@ const sideNavItems = ["Profile", "Home", "Settings"];
 const SideNav = () => {
   return (
     <div className="sidenav">
-      <ul className="sidenav_list">
+      <div className="sidenav_list">
         {sideNavItems.map((item, index) => (
-          <li key={index} className="bottomBorder">
+          <button key={index} className="bottomBorder">
             {item}
-          </li>
+          </button>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };
