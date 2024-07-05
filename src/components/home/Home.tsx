@@ -4,11 +4,10 @@ const Home = () => {
   return (
     <div>
       <h1>Note</h1>
-
       <div className="homeList">
-        <button>Todo</button>
-        <button>In Progress</button>
-        <button>Done</button>
+        <button className="homeList_item">Todo</button>
+        <button className="homeList_item">In Progress</button>
+        <button className="homeList_item">Done</button>
       </div>
     </div>
   );
