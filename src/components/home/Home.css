@@ -7,3 +7,15 @@
   width: 30%;
   margin: 0 auto;
 }
+
+.homeList_item button {
+  width: 50%;
+}
+
+.homeList_item_details {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0.6em 1.2em;
+  /* background-color: #1a1a1a; */
+}
