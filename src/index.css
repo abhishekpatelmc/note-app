@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: var(--background-color);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -14,6 +14,8 @@
 
   --primaryColor: #646cffaa;
   --secondaryColor: #61dafbaa;
+  --background-color: #242424;
+  --background-inverse: #dbdbdb;
 }
 
 a {
@@ -55,6 +57,12 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.icon-style {
+  width: 48px;
+  stroke: var(--background-inverse);
+  opacity: 40%;
 }
 
 @media (prefers-color-scheme: light) {
