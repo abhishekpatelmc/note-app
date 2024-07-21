@@ -7,7 +7,7 @@ const Home = () => {
   const [doneVisbile, setDoneVisible] = useState(false);
 
   return (
-    <div>
+    <div className="home_full">
       <h1>Note</h1>
       <div className="homeList">
         <div className="homeList_item">
@@ -30,6 +30,9 @@ const Home = () => {
           {doneVisbile && <div className="homeList_item_details">Done</div>}
         </div>
       </div>
+      <div className="test">Hello</div>
+      <div className="test">Hello</div>
+      <div className="test">Hello</div>
     </div>
   );
 };

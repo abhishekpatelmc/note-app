@@ -4,10 +4,10 @@ import Home from "./components/home/Home";
 
 function App() {
   return (
-    <>
+    <div className="full_content">
       <SideNav />
       <Home />
-    </>
+    </div>
   );
 }
 

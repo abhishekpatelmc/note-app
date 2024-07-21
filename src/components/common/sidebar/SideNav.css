@@ -1,12 +1,7 @@
 .sidenav {
-  height: 100%;
   padding-top: 2rem;
-  /* border: 2px solid yellow; */
-  /* border-right: 2px solid #646cffaa; */
+  text-align: center;
   border-right: 2px solid var(--secondaryColor);
-  position: fixed;
-  top: 0;
-  left: 0;
 }
 
 .sidenav_list_collapsed {
@@ -14,7 +9,6 @@
   flex-direction: column;
   row-gap: 1rem;
   padding: 0 20px;
-  /* border: solid 2px green; */
 }
 
 .sidenav_list_full {
