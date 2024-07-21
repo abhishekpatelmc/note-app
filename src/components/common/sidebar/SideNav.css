@@ -6,6 +6,7 @@
 .expand_button {
   margin-bottom: 5px;
   padding: 5px 30px;
+  cursor: pointer;
 }
 
 .sidenav_list_collapsed {

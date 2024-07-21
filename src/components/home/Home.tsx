@@ -30,9 +30,6 @@ const Home = () => {
           {doneVisbile && <div className="homeList_item_details">Done</div>}
         </div>
       </div>
-      <div className="test">Hello</div>
-      <div className="test">Hello</div>
-      <div className="test">Hello</div>
     </div>
   );
 };
