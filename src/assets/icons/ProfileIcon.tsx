@@ -1,11 +1,16 @@
-const ProfileIcon = () => {
+import React from "react";
+
+interface ProfileIconProps {
+  className?: string;
+}
+
+const ProfileIcon: React.FC<ProfileIconProps> = ({ className }) => {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
       stroke-width="1.5"
-      className="icon-style"
+      className={className}
     >
       <path
         stroke-linecap="round"

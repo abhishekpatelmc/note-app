@@ -1,14 +1,18 @@
 .sidenav {
   padding-top: 2rem;
-  text-align: center;
-  border-right: 2px solid var(--secondaryColor);
+  border-right: 2px solid var(--dark-background-color);
+}
+
+.expand_button {
+  margin-bottom: 5px;
+  padding: 5px 30px;
 }
 
 .sidenav_list_collapsed {
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
-  padding: 0 20px;
+  padding: 0 30px;
 }
 
 .sidenav_list_full {
@@ -20,8 +24,17 @@
 }
 
 .sidenav_list_item {
-  margin: 1rem 1rem;
+  margin: 0.5rem 1rem;
+  padding: 5px 15px;
+  background-color: var(--dark-background-color);
   display: flex;
   align-items: center;
   column-gap: 1rem;
+  border-radius: 10px;
+}
+
+.icon-style {
+  width: 32px;
+  stroke: var(--background-inverse);
+  opacity: 40%;
 }

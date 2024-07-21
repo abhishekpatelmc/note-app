@@ -1,10 +1,14 @@
-const SettingsIcon = () => {
+interface SettingsIconProps {
+  className?: string;
+}
+
+const SettingsIcon: React.FC<SettingsIconProps> = ({ className }) => {
   return (
     <svg
       fill="none"
       viewBox="0 0 24 24"
       stroke-width="1.5"
-      className="icon-style"
+      className={className}
     >
       <path
         stroke-linecap="round"

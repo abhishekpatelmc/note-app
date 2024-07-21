@@ -7,16 +7,16 @@ import RightIcon from "../../../assets/icons/RightIcon";
 import LeftIcon from "../../../assets/icons/LeftIcon";
 
 const sideNavItems = [
-  { index: 0, item: "Home", icon: <HomeIcon /> },
+  { index: 0, item: "Home", icon: <HomeIcon className="icon-style" /> },
   {
     index: 1,
     item: "Profile",
-    icon: <ProfileIcon />,
+    icon: <ProfileIcon className="icon-style" />,
   },
   {
     index: 2,
     item: "Settings",
-    icon: <SettingsIcon />,
+    icon: <SettingsIcon className="icon-style" />,
   },
 ];
 
@@ -30,8 +30,12 @@ const SideNav = () => {
 
   return (
     <div className="sidenav">
-      <div onClick={() => handleSideNav()}>
-        {!sideNavVisible ? <RightIcon /> : <LeftIcon />}
+      <div className="expand_button" onClick={() => handleSideNav()}>
+        {!sideNavVisible ? (
+          <RightIcon className="icon-style" />
+        ) : (
+          <LeftIcon className="icon-style" />
+        )}
       </div>
 
       {!sideNavVisible && (
@@ -45,10 +49,10 @@ const SideNav = () => {
       {sideNavVisible && (
         <div className="sidenav_list_full">
           {sideNavItems.map((item) => (
-            <button key={item.index} className="sidenav_list_item">
+            <div key={item.index} className="sidenav_list_item">
               {item.icon}
               {item.item}
-            </button>
+            </div>
           ))}
         </div>
       )}

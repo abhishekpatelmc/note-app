@@ -1,10 +1,16 @@
-const RightIcon = () => {
+import React from "react";
+
+interface RightIconProps {
+  className?: string;
+}
+
+const RightIcon: React.FC<RightIconProps> = ({ className }) => {
   return (
     <svg
       fill="none"
       viewBox="0 0 24 24"
       stroke-width="1.5"
-      className="icon-style"
+      className={className}
     >
       <path
         stroke-linecap="round"
