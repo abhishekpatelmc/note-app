@@ -24,7 +24,6 @@ const SideNav = () => {
   const [sideNavVisible, setSideNavVisible] = useState(false);
 
   const handleSideNav = () => {
-    // console.log(sideNavVisible);
     setSideNavVisible(!sideNavVisible);
   };
 
@@ -32,9 +31,12 @@ const SideNav = () => {
     <div className="sidenav">
       <div className="expand_button" onClick={() => handleSideNav()}>
         {!sideNavVisible ? (
-          <RightIcon className="icon-style" />
+          <RightIcon className="icon-style icon-backgrond" />
         ) : (
-          <LeftIcon className="icon-style" />
+          <div className="company_name">
+            Note
+            <LeftIcon className="icon-style icon-backgrond" />
+          </div>
         )}
       </div>
 

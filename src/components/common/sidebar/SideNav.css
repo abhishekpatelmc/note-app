@@ -39,3 +39,16 @@
   stroke: var(--background-inverse);
   opacity: 40%;
 }
+
+.icon-backgrond {
+  background-color: var(--dark-background-color);
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.company_name {
+  display: flex;
+  align-items: center;
+  font-size: large;
+  justify-content: space-between;
+}
