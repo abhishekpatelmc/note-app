@@ -34,7 +34,7 @@ const SideNav = () => {
           <RightIcon className="icon-style icon-backgrond" />
         ) : (
           <div className="company_name">
-            Note
+            <p className="company_name_text">Note App</p>
             <LeftIcon className="icon-style icon-backgrond" />
           </div>
         )}

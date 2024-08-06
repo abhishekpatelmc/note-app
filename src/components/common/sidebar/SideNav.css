@@ -1,6 +1,7 @@
 .sidenav {
   padding-top: 2rem;
   border-right: 2px solid var(--dark-background-color);
+  /* width: 500px; */
 }
 
 .expand_button {
@@ -22,6 +23,7 @@
   margin: 0;
   display: flex;
   flex-direction: column;
+  width: fit-content;
 }
 
 .sidenav_list_item {
@@ -49,6 +51,10 @@
 .company_name {
   display: flex;
   align-items: center;
-  font-size: large;
   justify-content: space-between;
+  white-space: nowrap;
+}
+
+.company_name_text {
+  margin-right: 10px;
 }
