@@ -1,7 +1,36 @@
-import { useState } from "react";
+import { FC, useState } from "react";
 import "./Home.css";
 
-const Home = () => {
+interface todoProp {
+  index: number;
+  name: string;
+  status: string;
+}
+
+const todos: todoProp[] = [
+  {
+    index: 0,
+    name: "First Task",
+    status: "NT",
+  },
+  {
+    index: 1,
+    name: "Second Task",
+    status: "NT",
+  },
+  {
+    index: 2,
+    name: "Third Task",
+    status: "D",
+  },
+  {
+    index: 3,
+    name: "Forth Task",
+    status: "IP",
+  },
+];
+
+const Home: FC = () => {
   const [todoVisible, setTodoVisible] = useState(false);
   const [inporgressVisible, setInprogressVisible] = useState(false);
   const [doneVisbile, setDoneVisible] = useState(false);
@@ -12,22 +41,33 @@ const Home = () => {
       <div className="homeList">
         <div className="homeList_item">
           <button onClick={() => setTodoVisible(!todoVisible)}>Todo</button>
-          {todoVisible && (
-            <div className="homeList_item_details">To do list</div>
-          )}
+          {todoVisible &&
+            todos
+              .filter((todo) => todo.status === "NT")
+              .map((todo) => (
+                <div className="homeList_item_details">{todo.name}</div>
+              ))}
         </div>
 
         <div className="homeList_item">
           <button onClick={() => setInprogressVisible(!inporgressVisible)}>
             In Progress
           </button>
-          {inporgressVisible && (
-            <div className="homeList_item_details">In Progress</div>
-          )}
+          {inporgressVisible &&
+            todos
+              .filter((todo) => todo.status === "IP")
+              .map((todo: todoProp) => (
+                <div className="homeList_item_details">{todo.name}</div>
+              ))}
         </div>
         <div className="homeList_item">
           <button onClick={() => setDoneVisible(!doneVisbile)}>Done</button>
-          {doneVisbile && <div className="homeList_item_details">Done</div>}
+          {doneVisbile &&
+            todos
+              .filter((todo: todoProp) => todo.status === "D")
+              .map((todo: todoProp) => (
+                <div className="homeList_item_details">{todo.name}</div>
+              ))}
         </div>
       </div>
     </div>
